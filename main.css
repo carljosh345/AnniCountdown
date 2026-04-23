@@ -1,3 +1,7 @@
+body {
+    background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+}
+
 .surprise-text {
     font-family: Bungee;
     font-size:70px;
