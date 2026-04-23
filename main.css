@@ -1,0 +1,27 @@
+.surprise-text {
+    font-family: Bungee;
+    font-size:70px;
+}    
+
+.surprise-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 140px;
+    color: white;
+}
+
+.link-text-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.link-text {
+    font-size: 20px;
+}
+
+a { color: inherit; text-decoration: none; }
