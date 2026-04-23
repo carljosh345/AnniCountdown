@@ -1,3 +1,10 @@
+/* Mobile Styles */
+@media (max-width: 600px) {
+    .container {
+        padding: 1.5rem; /* Smaller padding so it doesn't feel cramped */
+        width: 90%;      /* Ensures the box doesn't hit the screen edges */
+    }
+
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -19,7 +26,9 @@ body {
 
 #countdown {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
     margin-top: 20px;
 }
 
