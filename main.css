@@ -1,5 +1,11 @@
 body {
+    margin: 0;
     background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #880e4f;
 }
 
 .surprise-text {
