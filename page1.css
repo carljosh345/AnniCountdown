@@ -1,18 +1,15 @@
-/* Mobile Styles */
-@media (max-width: 600px) {
-    .container {
-        padding: 1.5rem; /* Smaller padding so it doesn't feel cramped */
-        width: 90%;      /* Ensures the box doesn't hit the screen edges */
-    }
+/* --- 1. GENERAL STYLES (Laptops and PC) --- */
+/* These run first so every device can see them */
 
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* This creates the pink background since you don't have an image */
     background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     color: #880e4f;
 }
 
@@ -22,6 +19,8 @@ body {
     padding: 3rem;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px; /* Limits width on PC so it doesn't look too stretched */
 }
 
 #countdown {
@@ -37,7 +36,8 @@ body {
     color: white;
     padding: 15px;
     border-radius: 10px;
-    min-width: 80px;
+    min-width: 100px;
+    flex: 1; /* Makes boxes equal width */
 }
 
 .time-box span {
@@ -60,4 +60,27 @@ body {
     opacity: 0.8;
     border-top: 1px solid #f8bbd0;
     padding-top: 15px;
+}
+
+/* --- 2. MOBILE STYLES (Screens smaller than 600px) --- */
+/* This section only overrides specific things for phones */
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1.5rem; 
+        width: 90%;      
+    }
+
+    .time-box {
+        min-width: 70px; /* Smaller boxes for small screens */
+        padding: 10px;
+    }
+
+    .time-box span {
+        font-size: 1.8rem; /* Smaller text so it fits */
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
 }
